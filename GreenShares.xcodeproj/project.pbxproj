@@ -24,25 +24,25 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		BEBA10502D5BF62600A368B1 /* MapCar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MapCar.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		BEBA10632D5BF62700A368B1 /* MapCarTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MapCarTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		BEBA106D2D5BF62700A368B1 /* MapCarUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MapCarUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BEBA10502D5BF62600A368B1 /* GreenShares.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GreenShares.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BEBA10632D5BF62700A368B1 /* GreenSharesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GreenSharesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BEBA106D2D5BF62700A368B1 /* GreenSharesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GreenSharesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		BEBA10522D5BF62600A368B1 /* MapCar */ = {
+		BEBA10522D5BF62600A368B1 /* GreenShares */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			path = MapCar;
+			path = GreenShares;
 			sourceTree = "<group>";
 		};
-		BEBA10662D5BF62700A368B1 /* MapCarTests */ = {
+		BEBA10662D5BF62700A368B1 /* GreenSharesTests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			path = MapCarTests;
+			path = GreenSharesTests;
 			sourceTree = "<group>";
 		};
-		BEBA10702D5BF62700A368B1 /* MapCarUITests */ = {
+		BEBA10702D5BF62700A368B1 /* GreenSharesUITests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			path = MapCarUITests;
+			path = GreenSharesUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -75,9 +75,9 @@
 		BEBA10472D5BF62600A368B1 = {
 			isa = PBXGroup;
 			children = (
-				BEBA10522D5BF62600A368B1 /* MapCar */,
-				BEBA10662D5BF62700A368B1 /* MapCarTests */,
-				BEBA10702D5BF62700A368B1 /* MapCarUITests */,
+				BEBA10522D5BF62600A368B1 /* GreenShares */,
+				BEBA10662D5BF62700A368B1 /* GreenSharesTests */,
+				BEBA10702D5BF62700A368B1 /* GreenSharesUITests */,
 				BEBA10512D5BF62600A368B1 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -85,9 +85,9 @@
 		BEBA10512D5BF62600A368B1 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				BEBA10502D5BF62600A368B1 /* MapCar.app */,
-				BEBA10632D5BF62700A368B1 /* MapCarTests.xctest */,
-				BEBA106D2D5BF62700A368B1 /* MapCarUITests.xctest */,
+				BEBA10502D5BF62600A368B1 /* GreenShares.app */,
+				BEBA10632D5BF62700A368B1 /* GreenSharesTests.xctest */,
+				BEBA106D2D5BF62700A368B1 /* GreenSharesUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -95,9 +95,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		BEBA104F2D5BF62600A368B1 /* MapCar */ = {
+		BEBA104F2D5BF62600A368B1 /* GreenShares */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = BEBA10772D5BF62700A368B1 /* Build configuration list for PBXNativeTarget "MapCar" */;
+			buildConfigurationList = BEBA10772D5BF62700A368B1 /* Build configuration list for PBXNativeTarget "GreenShares" */;
 			buildPhases = (
 				BEBA104C2D5BF62600A368B1 /* Sources */,
 				BEBA104D2D5BF62600A368B1 /* Frameworks */,
@@ -108,18 +108,18 @@
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				BEBA10522D5BF62600A368B1 /* MapCar */,
+				BEBA10522D5BF62600A368B1 /* GreenShares */,
 			);
-			name = MapCar;
+			name = GreenShares;
 			packageProductDependencies = (
 			);
 			productName = MapCar;
-			productReference = BEBA10502D5BF62600A368B1 /* MapCar.app */;
+			productReference = BEBA10502D5BF62600A368B1 /* GreenShares.app */;
 			productType = "com.apple.product-type.application";
 		};
-		BEBA10622D5BF62700A368B1 /* MapCarTests */ = {
+		BEBA10622D5BF62700A368B1 /* GreenSharesTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = BEBA107A2D5BF62700A368B1 /* Build configuration list for PBXNativeTarget "MapCarTests" */;
+			buildConfigurationList = BEBA107A2D5BF62700A368B1 /* Build configuration list for PBXNativeTarget "GreenSharesTests" */;
 			buildPhases = (
 				BEBA105F2D5BF62700A368B1 /* Sources */,
 				BEBA10602D5BF62700A368B1 /* Frameworks */,
@@ -131,18 +131,18 @@
 				BEBA10652D5BF62700A368B1 /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
-				BEBA10662D5BF62700A368B1 /* MapCarTests */,
+				BEBA10662D5BF62700A368B1 /* GreenSharesTests */,
 			);
-			name = MapCarTests;
+			name = GreenSharesTests;
 			packageProductDependencies = (
 			);
 			productName = MapCarTests;
-			productReference = BEBA10632D5BF62700A368B1 /* MapCarTests.xctest */;
+			productReference = BEBA10632D5BF62700A368B1 /* GreenSharesTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		BEBA106C2D5BF62700A368B1 /* MapCarUITests */ = {
+		BEBA106C2D5BF62700A368B1 /* GreenSharesUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = BEBA107D2D5BF62700A368B1 /* Build configuration list for PBXNativeTarget "MapCarUITests" */;
+			buildConfigurationList = BEBA107D2D5BF62700A368B1 /* Build configuration list for PBXNativeTarget "GreenSharesUITests" */;
 			buildPhases = (
 				BEBA10692D5BF62700A368B1 /* Sources */,
 				BEBA106A2D5BF62700A368B1 /* Frameworks */,
@@ -154,13 +154,13 @@
 				BEBA106F2D5BF62700A368B1 /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
-				BEBA10702D5BF62700A368B1 /* MapCarUITests */,
+				BEBA10702D5BF62700A368B1 /* GreenSharesUITests */,
 			);
-			name = MapCarUITests;
+			name = GreenSharesUITests;
 			packageProductDependencies = (
 			);
 			productName = MapCarUITests;
-			productReference = BEBA106D2D5BF62700A368B1 /* MapCarUITests.xctest */;
+			productReference = BEBA106D2D5BF62700A368B1 /* GreenSharesUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -186,7 +186,7 @@
 					};
 				};
 			};
-			buildConfigurationList = BEBA104B2D5BF62600A368B1 /* Build configuration list for PBXProject "MapCar" */;
+			buildConfigurationList = BEBA104B2D5BF62600A368B1 /* Build configuration list for PBXProject "GreenShares" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -200,9 +200,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				BEBA104F2D5BF62600A368B1 /* MapCar */,
-				BEBA10622D5BF62700A368B1 /* MapCarTests */,
-				BEBA106C2D5BF62700A368B1 /* MapCarUITests */,
+				BEBA104F2D5BF62600A368B1 /* GreenShares */,
+				BEBA10622D5BF62700A368B1 /* GreenSharesTests */,
+				BEBA106C2D5BF62700A368B1 /* GreenSharesUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -258,12 +258,12 @@
 /* Begin PBXTargetDependency section */
 		BEBA10652D5BF62700A368B1 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = BEBA104F2D5BF62600A368B1 /* MapCar */;
+			target = BEBA104F2D5BF62600A368B1 /* GreenShares */;
 			targetProxy = BEBA10642D5BF62700A368B1 /* PBXContainerItemProxy */;
 		};
 		BEBA106F2D5BF62700A368B1 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = BEBA104F2D5BF62600A368B1 /* MapCar */;
+			target = BEBA104F2D5BF62600A368B1 /* GreenShares */;
 			targetProxy = BEBA106E2D5BF62700A368B1 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -388,10 +388,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = MapCar/MapCar.entitlements;
+				CODE_SIGN_ENTITLEMENTS = GreenShares/GreenShares.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"MapCar/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"GreenShares/Preview Content\"";
 				DEVELOPMENT_TEAM = 6446CYV4HU;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
@@ -411,7 +411,7 @@
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 14.0;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.markle.MapCar;
+				PRODUCT_BUNDLE_IDENTIFIER = com.greenshares.app;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
@@ -427,10 +427,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = MapCar/MapCar.entitlements;
+				CODE_SIGN_ENTITLEMENTS = GreenShares/GreenShares.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"MapCar/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"GreenShares/Preview Content\"";
 				DEVELOPMENT_TEAM = 6446CYV4HU;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
@@ -450,7 +450,7 @@
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 14.0;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.markle.MapCar;
+				PRODUCT_BUNDLE_IDENTIFIER = com.greenshares.app;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
@@ -554,7 +554,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		BEBA104B2D5BF62600A368B1 /* Build configuration list for PBXProject "MapCar" */ = {
+		BEBA104B2D5BF62600A368B1 /* Build configuration list for PBXProject "GreenShares" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				BEBA10752D5BF62700A368B1 /* Debug */,
@@ -563,7 +563,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		BEBA10772D5BF62700A368B1 /* Build configuration list for PBXNativeTarget "MapCar" */ = {
+		BEBA10772D5BF62700A368B1 /* Build configuration list for PBXNativeTarget "GreenShares" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				BEBA10782D5BF62700A368B1 /* Debug */,
@@ -572,7 +572,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		BEBA107A2D5BF62700A368B1 /* Build configuration list for PBXNativeTarget "MapCarTests" */ = {
+		BEBA107A2D5BF62700A368B1 /* Build configuration list for PBXNativeTarget "GreenSharesTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				BEBA107B2D5BF62700A368B1 /* Debug */,
@@ -581,7 +581,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		BEBA107D2D5BF62700A368B1 /* Build configuration list for PBXNativeTarget "MapCarUITests" */ = {
+		BEBA107D2D5BF62700A368B1 /* Build configuration list for PBXNativeTarget "GreenSharesUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				BEBA107E2D5BF62700A368B1 /* Debug */,
