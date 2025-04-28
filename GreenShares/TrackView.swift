@@ -20,7 +20,7 @@ struct TrackView: View {
     @State private var showingSheet = false
     
     var body: some View {
-        NavigationView {
+        NavigationStack {
             ScrollView {
                 VStack(alignment: .leading, spacing: 20) {
                     GroupBox(label: Text("Set Your Goal")) {
@@ -41,15 +41,18 @@ struct TrackView: View {
                 }
                 .padding()
                 .toolbar {
-                    ToolbarItem(placement: .navigationBarTrailing) {
-                        Button(action: { showingSheet.toggle() }) {
-                            Image(systemName: "plus")
-                        }
-                    }
+                    //ToolbarItem(placement: .navigationBarTrailing) {
+                      //  Button(action: { showingSheet.toggle() }) {
+                      //      Image(systemName: "plus")
+                      //  }
+                   // }
+                    Button(action: { showingSheet.toggle() }) {
+                                Image(systemName: "plus")
+                            }
                 }
             }
             .sheet(isPresented: $showingSheet) {
-                NavigationView {
+                NavigationStack {
                     ScrollView {
                         VStack(alignment: .leading, spacing: 20) {
                             GroupBox(label: Text("Identity Verification")) {
@@ -78,12 +81,15 @@ struct TrackView: View {
                         .padding()
                     }
                     .navigationTitle("Add Carbon Data")
-                    .navigationBarTitleDisplayMode(.inline)
+                    .toolbarTitleDisplayMode(.inline)
                     .toolbar {
-                        ToolbarItem(placement: .navigationBarLeading) {
-                            Button("Cancel") {
-                                showingSheet.toggle()
-                            }
+                        //ToolbarItem(placement: .navigationBarLeading) {
+                        //    Button("Cancel") {
+                         //       showingSheet.toggle()
+                         //   }
+                        //}
+                        Button("Cancel") {
+                            showingSheet.toggle()
                         }
                     }
                 }
