@@ -8,15 +8,18 @@
 import SwiftUI
 
 struct OnboardingView: View {
-    
     @State private var currentPage = 0
+    @State private var showSignUp = false
+    @State private var showLogin = false
+    @Binding var isLoggedIn: Bool
+    @Environment(\.dismiss) private var dismiss
+    
     private let totalPages = 3
 
     var body: some View {
         ZStack {
             // Color
             LinearGradient(
-                // Can change color
                 colors: [Color.green.opacity(1.8), Color.green.opacity(0.2)],
                 startPoint: .top,
                 endPoint: .bottom
@@ -47,9 +50,14 @@ struct OnboardingView: View {
                     tag: 2)
                 lastPage()
             }
-            // ERROR ///////////////////////////////////
             .tabViewStyle(.page)
             .animation(.easeInOut(duration: 0.5), value: currentPage)
+        }
+        .fullScreenCover(isPresented: $showSignUp) {
+            SignUpView()
+        }
+        .fullScreenCover(isPresented: $showLogin) {
+            LoginView(isLoggedIn: $isLoggedIn)
         }
     }
     
@@ -105,21 +113,34 @@ struct OnboardingView: View {
                 .multilineTextAlignment(.center)
                 .padding()
             
-            Image("carbon_credits_image")
+            Image("Trees")
                 .resizable()
                 .scaledToFit()
                 .frame(height: 250)
+                .cornerRadius(20)
             
             Button("Login") {
-                // Navigate to Login screen
+                showLogin = true
             }
-            .buttonStyle(.borderedProminent)
-            .padding(.bottom)
-
+            .font(.headline)
+            .foregroundColor(.white)
+            .frame(maxWidth: .infinity)
+            .padding()
+            .background(Color.blue)
+            .cornerRadius(12)
+            .padding(.horizontal, 40)
+            
             Button("Sign Up") {
-                // Navigate to Sign Up screen
+                showSignUp = true
             }
-            .buttonStyle(.bordered)
+            .font(.headline)
+            .foregroundColor(.white)
+            .frame(maxWidth: .infinity)
+            .padding()
+            .background(Color.green)
+            .cornerRadius(12)
+            .padding(.horizontal, 40)
+            .padding(.bottom)
         }
         .padding()
         .tag(3)
@@ -127,6 +148,6 @@ struct OnboardingView: View {
 }
 
 #Preview {
-    OnboardingView()
+    OnboardingView(isLoggedIn: .constant(false))
 }
 

@@ -10,10 +10,12 @@ import SwiftData
 
 @main
 struct GreenSharesApp: App {
+    @StateObject private var portfolio = UserPortfolio()
 
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environmentObject(portfolio)
         }
     }
 }

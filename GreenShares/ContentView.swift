@@ -9,34 +9,47 @@ import SwiftUI
 import SwiftData
 
 struct ContentView: View {
-    @State private var isLoggedIn = false
+    @State var isLoggedIn = false
+    @State private var selectedTab = 0
 
     var body: some View {
         if isLoggedIn {
-            TabView {
-                TrackView()
+            TabView(selection: $selectedTab) {
+                DashboardView()
                     .tabItem {
-                        Image(systemName: "chart.pie.fill")
-                        Text("Track")
+                        Label("Dashboard", systemImage: "chart.pie.fill")
                     }
-                InvestView()
+                    .tag(0)
+                
+                BuyView()
                     .tabItem {
-                        Image(systemName: "leaf.arrow.circlepath")
-                        Text("Invest")
+                        Label("Buy", systemImage: "cart.fill")
                     }
-                TradeView()
+                    .tag(1)
+                
+                SellView()
                     .tabItem {
-                        Image(systemName: "chart.line.uptrend.xyaxis")
-                        Text("Trade")
+                        Label("Sell", systemImage: "dollarsign.circle.fill")
                     }
+                    .tag(2)
+                
+//                RetireView()
+//                    .tabItem {
+//                        Label("Retire", systemImage: "leaf.fill")
+//                    }
+//                    .tag(3)
+                
                 RewardView()
                     .tabItem {
-                        Image(systemName: "star.fill")
-                        Text("Reward")
+                        Label("Rewards", systemImage: "star.fill")
                     }
+                    .tag(4)
             }
+            .accentColor(.green)
+            .toolbar(.visible, for: .tabBar)
+            .toolbarBackground(Color(UIColor.systemBackground), for: .tabBar)
         } else {
-            LoginView(isLoggedIn: $isLoggedIn)
+            SplashView(isLoggedIn: $isLoggedIn)
         }
     }
 }
