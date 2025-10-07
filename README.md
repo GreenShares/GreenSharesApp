@@ -25,4 +25,4 @@ GreenShares is an innovative app designed to help users trade carbon credits whi
    ```bash
    git clone https://github.com/your-username/GreenShares.git
 2. Open the project in Xcode.
-3. Build and run on your desired simulator or device.
+3. Build and run on your desired simulator.
